@@ -1,11 +1,11 @@
-import './App.css'
-
+import './App.css';
+import UserTextInput from './UserTextInput';
 function App() {
   
 
   return (
     <>
-      
+      <UserTextInput />
     </>
   )
 }
