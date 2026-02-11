@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, type ChangeEvent } from "react";
 
 export default function AudioSelect () {
 
         const [sound, setSound] = useState("");
 
-        function handleSound(e) {
+        function handleSound(e: ChangeEvent<HTMLSelectElement>) {
             setSound(e.target.value)
         }
         return(

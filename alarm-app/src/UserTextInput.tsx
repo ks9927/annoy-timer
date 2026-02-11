@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useState, type ChangeEvent} from "react"
 export default function UserTextInput() {
     const [task, setTask] = useState("");
-    function handleChange(e) {
+    function handleChange(e:ChangeEvent<HTMLInputElement>) {
         setTask(e.target.value)
     }
     return(
